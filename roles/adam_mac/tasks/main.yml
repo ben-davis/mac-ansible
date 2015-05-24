@@ -10,6 +10,3 @@
 
 - name: Copy in/clone app settings
   include: app_settings.yml
-
-- name: Cron settings
-  include: cron.yml

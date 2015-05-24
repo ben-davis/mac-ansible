@@ -1,25 +1,15 @@
 ---
 homebrew_packages:
-  - autoconf
-  - autojump
-  - automake
-  - bazaar
   - brew-cask
   - coreutils
-  - cowsay
   - exiftool
   - ffmpeg
   - freetype
-  - fswatch
-  - gdbm
   - git
-  - gpg
   - htop-osx
   - imagemagick
   - jpeg
   - jpegoptim
-  - jq
-  - lesspipe
   - libevent
   - libmemcached
   - libpng
@@ -31,8 +21,6 @@ homebrew_packages:
   - ncdu
   - node
   - openssl
-  - ossp-uuid
-  - percona-toolkit
   - pkg-config
   - pngcrush
   - postgresql
@@ -40,47 +28,32 @@ homebrew_packages:
   - python
   - python3
   - readline
-  - rtmpdump
   - ruby
   - ruby-build
   - ruby-install
-  - shellcheck
   - sloccount
   - sqlite
+  - tmux
   - tree
   - watch
   - wget
-  - xz
-  - youtube-dl
-  - zsh-completions
 
 homebrew_cask_packages:
-  - alfred
-  - anki
-  - arq
-  - bettertouchtool
-  - boot2docker
+  - 1password
+  - adobe-creative-cloud
   - calibre
-  - colloquy
-  - disk-inventory-x
+  - dropbox
   - evernote
   - firefox
   - flux
   - google-chrome
+  - iterm2
   - karabiner
-  - keyboard-maestro
-  - mactex
-  - mysqlworkbench
   - pgadmin3
-  - rescuetime
   - sequel-pro
-  - simple-comic
-  - skim
+  - slack
   - skype
-  - soundcleod
-  - steam
-  - sublime-text
-  - texmaker
+  - sublime-text3
   - utorrent
   - vagrant
   - virtualbox
@@ -95,9 +68,7 @@ pip_packages:
   - Glances
   - ipdb
   - ipython
-  - lifelogger
   - numpy
-  - pandas
   - pathlib
   - pep8
   - pygments
@@ -111,4 +82,7 @@ pip_packages:
   - virtualenvwrapper
 
 npm_packages:
-  - ember-cli
+  - gulp
+  - csslint
+  - jshint
+  - jsxhint
