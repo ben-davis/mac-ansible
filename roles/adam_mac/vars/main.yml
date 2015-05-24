@@ -47,11 +47,13 @@ homebrew_cask_packages:
   - firefox
   - flux
   - google-chrome
+  - heroku-toolbelt
   - iterm2
   - karabiner
   - pgadmin3
   - sequel-pro
   - slack
+  - spotify
   - skype
   - sublime-text3
   - utorrent
