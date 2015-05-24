@@ -20,6 +20,9 @@
   tags:
     - brew
 
+- name: Install pip
+- easy_install: name=pip
+
 - name: Install pip packages
   pip: name={{ item }} state=latest
   with_items: pip_packages
