@@ -1,3 +1,18 @@
+- file: src={{ ansible_env.PWD }}/roles/ben_mac/files/dotfiles/{{ item }}
+        path=~/.{{ item }}
+        state=link
+  with_items:
+    - bashrc
+    - bashrc-custom
+    - git-completions
+    - git-prompt-info
+    - tmux.conf
+    - vimrc
+
+- copy: src=dotfiles/.Preferences.sublime-settings
+        dest="~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+        force=no  # Only if it doesn't exist
+
 # - file: path=~/.{{ item }} state=directory
 #   with_items:
 #     - innotop
