@@ -1,8 +1,11 @@
-- name: Install things
-  include: installs.yml
+# - name: Install things
+#   include: installs.yml
 
-- name: Link in dotfiles
-  include: dotfiles.yml
+# - name: Link in dotfiles
+#   include: dotfiles.yml
 
-- name: Copy in/clone app settings
-  include: app_settings.yml
+# - name: Copy in/clone app settings
+#   include: app_settings.yml
+
+- name: Set up dev folder configuration
+  include: dev_configuration.yml

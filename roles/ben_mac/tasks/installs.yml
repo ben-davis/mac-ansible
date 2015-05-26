@@ -3,6 +3,9 @@
   tags:
     - brew
 
+- name: Install caskroom versions tap
+  homebrew_tap: tap=caskroom/versions
+
 - name: Install homebrew packages
   homebrew: name={{ item }} state=latest
   with_items: homebrew_packages
@@ -34,3 +37,9 @@
   with_items: npm_packages
   tags:
     - npm
+
+- name: Install ruby gems
+  gem: name={{ item }} state=latest
+  with_items: gem_packages
+  tags:
+    - gem

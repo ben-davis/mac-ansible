@@ -1,6 +1,5 @@
-- file: src={{ ansible_env.PWD }}/roles/ben_mac/files/dotfiles/{{ item }}
-        path=~/.{{ item }}
-        state=link
+- copy: src={{ ansible_env.PWD }}/roles/ben_mac/files/dotfiles/.{{ item }}
+        dest=~/.{{ item }}
   with_items:
     - bashrc
     - bashrc-custom
@@ -9,9 +8,13 @@
     - tmux.conf
     - vimrc
 
-- copy: src=dotfiles/.Preferences.sublime-settings
-        dest="~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
-        force=no  # Only if it doesn't exist
+- file: src="~/.bashrc"
+        path="~/.bash_profile"
+        state=link
+
+- name: Base16 shell colours
+  git: repo=https://github.com/chriskempson/base16-shell.git
+       dest=~/.config/base16-shell
 
 # - file: path=~/.{{ item }} state=directory
 #   with_items:

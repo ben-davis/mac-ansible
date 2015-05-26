@@ -1,0 +1,11 @@
+- name: Create dev directory
+  file: path="~/dev" state=directory
+
+- name: Create dev/git directory
+  file: path="~/dev/git" state=directory
+
+- name: Create dev/temp directory
+  file: path="~/dev/temp" state=directory
+
+- name: Create dev/configuration directory
+  file: path="~/dev/configuration" state=directory
